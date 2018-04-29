@@ -1,0 +1,14 @@
+.app-store(@width, @height) {
+  display: block;
+  text-indent: -9999px;
+  background: url("../images/svg/ico-app-store.svg") no-repeat;
+  background-size: 100% 100%;
+  width: @width;
+  height: @height;
+  flex: 0 0 @width;
+  .transition(all 300ms linear);
+
+  &:hover {
+    .transform(scale(1.02));
+  }
+}
